@@ -64,7 +64,7 @@ USE Assignment_1
 
  ALTER TABLE Customer
  ALTER COLUMN CustomerName VARCHAR(100) NOT NULL;
---(3) Fetch the data where the Customer’s name is ending with ‘N’ also get the purchase 
+--(3) Fetch the data where the Customerâ€™s name is ending with â€˜Nâ€™ also get the purchase 
 --amount value greater than 500.
 --ANSWER ->
  SELECT CustomerName, PurchaseAmount FROM Customer
