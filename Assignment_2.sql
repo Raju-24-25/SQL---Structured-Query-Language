@@ -1,4 +1,4 @@
---(1) Create a user-defined functions to stuff the Chicken into ‘Quick Bites’. Eg: ‘Quick  Chicken Bites’.
+--(1) Create a user-defined functions to stuff the Chicken into â€˜Quick Bitesâ€™. Eg: â€˜Quick  Chicken Bitesâ€™.
 --ANSWER ->
 CREATE OR ALTER FUNCTION fn_StuffChicken (@RestaurantName VARCHAR(255))
 RETURNS VARCHAR(255)
@@ -13,8 +13,8 @@ SELECT RestaurantName, CuisinesType
 FROM Jomato
 WHERE No_of_Rating = (SELECT MAX(No_of_Rating) FROM Jomato);
 
---(3) Create a Rating Status column to display the rating as ‘Excellent’ if it has more the 4start rating, ‘Good’ if it has above 3.5
---    and below 5 star rating, ‘Average’ if it is above 3and below 3.5 and ‘Bad’ if it is below 3 star rating.
+--(3) Create a Rating Status column to display the rating as â€˜Excellentâ€™ if it has more the 4start rating, â€˜Goodâ€™ if it has above 3.5
+--    and below 5 star rating, â€˜Averageâ€™ if it is above 3and below 3.5 and â€˜Badâ€™ if it is below 3 star rating.
 --ANSWER ->
 CREATE OR ALTER FUNCTION fn_GetRatingStatus (@rating FLOAT)
 RETURNS VARCHAR(20)
