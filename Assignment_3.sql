@@ -10,7 +10,7 @@ END;
 
 EXECUTE Get_Bookable_Restaurants;
 
--- (2) Create a transaction and update the cuisine type ‘Cafe’ to ‘Cafeteria’. Check the result and rollback it.
+-- (2) Create a transaction and update the cuisine type â€˜Cafeâ€™ to â€˜Cafeteriaâ€™. Check the result and rollback it.
 --ANSWER ->
 BEGIN TRANSACTION;
 
